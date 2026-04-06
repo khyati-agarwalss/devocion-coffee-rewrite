@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #1c1409;
+  --ink-deep: #120d06;
+  --ink-mid: #3a2a18;
+  --ink-muted: #4a3828;
+  --ink-faint: #221508;
+  --parchment: #f7f4ee;
+  --parchment-warm: #f0eae0;
+  --gold: #b07d3a;
+  --gold-light: #c8a870;
+  --gold-pale: #c8a96030;
+  --text-muted: #8a7560;
+  --text-dim: #7a6050;
+  --text-dimmer: #6a5040;
+  --text-ghost: #4a3828;
+  --border-ink: #3a2a18;
+  --border-faint: #c8a96030;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-dm-sans), sans-serif;
+  background-color: var(--parchment);
+  color: var(--ink);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.serif {
+  font-family: var(--font-playfair), "Georgia", serif;
+}
+
+.mono {
+  font-family: var(--font-dm-mono), "Courier New", monospace;
+}
+
+/* Scroll-triggered fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b07d3a60;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Section base */
+.section {
+  padding: 120px 8vw;
+}
+
+/* Label */
+.eyebrow {
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.divider-line {
+  height: 1px;
+  background: var(--border-faint);
+  margin: 48px 0;
+}

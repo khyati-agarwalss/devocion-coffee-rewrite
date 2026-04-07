@@ -32,7 +32,7 @@ export default function VisionSection() {
         </span>
       </div>
 
-      <FadeIn style={{ position: "relative", zIndex: 2 }}>
+      <FadeIn>
         <span className="eyebrow" style={{ color: "var(--gold)" }}>
           The shift
         </span>

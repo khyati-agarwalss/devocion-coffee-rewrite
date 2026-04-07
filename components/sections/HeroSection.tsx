@@ -45,7 +45,7 @@ export default function HeroSection() {
       </div>
 
       {/* Main copy */}
-      <FadeIn style={{ position: "relative", zIndex: 2, maxWidth: 900 }}>
+      <FadeIn>
         <span className="eyebrow" style={{ color: "var(--gold)", marginBottom: 32 }}>
           Story-driven product copy
         </span>

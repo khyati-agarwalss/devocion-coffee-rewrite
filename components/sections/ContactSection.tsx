@@ -10,12 +10,12 @@ export default function ContactSection() {
     <section
       id="contact"
       className="section"
-      style={{
-        background: "var(--ink)",
-        textAlign: "center",
-        position: "relative",
-        overflow: "hidden",
-      }}
+      // style={{
+      //   background: "var(--ink)",
+      //   textAlign: "center",
+      //   position: "relative",
+      //   overflow: "hidden",
+      // }}
     >
       {/* Background watermark */}
       <div
@@ -43,14 +43,7 @@ export default function ContactSection() {
         </span>
       </div>
 
-      <FadeIn
-        style={{
-          position: "relative",
-          zIndex: 2,
-          maxWidth: 640,
-          margin: "0 auto",
-        }}
-      >
+      <FadeIn>
         <span className="eyebrow" style={{ color: "var(--gold)" }}>
           Let&apos;s begin
         </span>
